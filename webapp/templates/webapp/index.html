@@ -1,3 +1,6 @@
+{% load static %}
+
+
 <!doctype html>
 <html class="no-js" lang="zxx">
    <head>
@@ -8,21 +11,21 @@
       <meta name="viewport" content="width=device-width, initial-scale=1">
 
       <!-- Place favicon.ico in the root directory -->
-      <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
+      <link rel="shortcut icon" type="image/x-icon" href="{% static 'webapp/assets/img/favicon.png' %}">
 
       <!-- CSS here -->
-      <link rel="stylesheet" href="assets/css/bootstrap.css">
-      <link rel="stylesheet" href="assets/css/meanmenu.css">
-      <link rel="stylesheet" href="assets/css/animate.css">
-      <link rel="stylesheet" href="assets/css/owl-carousel.css">
-      <link rel="stylesheet" href="assets/css/swiper-bundle.css">
-      <link rel="stylesheet" href="assets/css/backtotop.css">
-      <link rel="stylesheet" href="assets/css/magnific-popup.css">
-      <link rel="stylesheet" href="assets/css/nice-select.css">
-      <link rel="stylesheet" href="assets/css/flaticon.css">
-      <link rel="stylesheet" href="assets/css/font-awesome-pro.css">
-      <link rel="stylesheet" href="assets/css/spacing.css">
-      <link rel="stylesheet" href="assets/css/style.css">
+      <link rel="stylesheet" href="{% static 'webapp/assets/css/bootstrap.css' %}">
+      <link rel="stylesheet" href="{% static 'webapp/assets/css/meanmenu.css' %}">
+      <link rel="stylesheet" href="{% static 'webapp/assets/css/animate.css'  %}">
+      <link rel="stylesheet" href="{% static 'webapp/assets/css/owl-carousel.css'  %}">
+      <link rel="stylesheet" href="{% static 'webapp/assets/css/swiper-bundle.css'  %}">
+      <link rel="stylesheet" href="{% static 'webapp/assets/css/backtotop.css'  %}">
+      <link rel="stylesheet" href="{% static 'webapp/assets/css/magnific-popup.css'  %}">
+      <link rel="stylesheet" href="{% static 'webapp/assets/css/nice-select.css'  %}">
+      <link rel="stylesheet" href="{% static 'webapp/assets/css/flaticon.css'  %}">
+      <link rel="stylesheet" href="{% static 'webapp/assets/css/font-awesome-pro.css'  %}">
+      <link rel="stylesheet" href="{% static 'webapp/assets/css/spacing.css'  %}">
+      <link rel="stylesheet" href="{% static 'webapp/assets/css/style.css'  %}">
    </head>
    <body>
       <!--[if lte IE 9]>
@@ -49,7 +52,7 @@
                   <div class="col-xl-2 col-lg-2 col-md-6 col-6">
                      <div class="logo-area">
                            <div class="logo">
-                              <a href="index.html"><img src="assets/img/logo/logo-white.png" alt=""></a>
+                              <a href="index.html"><img src="{%  static 'webapp/assets/img/logo/logo-white.png' %}" alt=""></a>
                            </div>
                      </div>
                   </div>
@@ -177,8 +180,7 @@
       <!-- sidebar area end -->     
       <div class="body-overlay"></div>
       <!-- sidebar area end --> 
- 
-      <main>
+
 
       <!-- slider-area-start  -->
       <section class="slider-area fix">
@@ -314,7 +316,7 @@
          </div>
       </section>
       <!-- Swiper Dot end -->
-
+      <main>
       <!-- about__area start -->
       <section class="about__area pt-120 pb-90">
          <div class="container">
@@ -322,7 +324,7 @@
                <div class="col-xl-6 col-lg-6">
                   <div class="ab-tab-info mb-30">
                      <div class="ab-image w-img">
-                        <img src="assets/img/about/about-1.jpg" alt="">
+                        <img src="{% static 'webapp/assets/img/about/about-1.jpg' %}" alt="">
                      </div>
                      <div class="absp-text absp-text-1">
                         <i class="flaticon-windmill"></i>
@@ -582,22 +584,22 @@
                   <div class="brand__slider swiper-container">
                      <div class="swiper-wrapper">
                         <div class="brand__slider-item swiper-slide">
-                           <a href="#"><img src="assets/img/brand/brand-1.png" alt=""></a>
+                           <a href="#"><img src="{%  static 'webapp/assets/img/brand/brand-1.png' %}" alt=""></a>
                         </div>
                         <div class="brand__slider-item swiper-slide">
-                           <a href="#"><img src="assets/img/brand/brand-2.png" alt=""></a>
+                           <a href="#"><img src="{%  static 'webapp/assets/img/brand/brand-2.png' %}" alt=""></a>
                         </div>
                         <div class="brand__slider-item swiper-slide">
-                           <a href="#"><img src="assets/img/brand/brand-3.png" alt=""></a>
+                           <a href="#"><img src="{%  static 'webapp/assets/img/brand/brand-3.png' %}" alt=""></a>
                         </div>
                         <div class="brand__slider-item swiper-slide">
-                           <a href="#"><img src="assets/img/brand/brand-4.png" alt=""></a>
+                           <a href="#"><img src="{%  static 'webapp/assets/img/brand/brand-4.png' %}" alt=""></a>
                         </div>
                         <div class="brand__slider-item swiper-slide">
-                           <a href="#"><img src="assets/img/brand/brand-5.png" alt=""></a>
+                           <a href="#"><img src="{%  static 'webapp/assets/img/brand/brand-5.png' %}" alt=""></a>
                         </div>
                         <div class="brand__slider-item swiper-slide">
-                           <a href="#"><img src="assets/img/brand/brand-1.png" alt=""></a>
+                           <a href="#"><img src="{%  static 'webapp/assets/img/brand/brand-1.png' %}" alt=""></a>
                         </div>
                      </div>
                   </div>
@@ -631,7 +633,7 @@
                </div>
                <div class="col-xl-6 col-lg-6">
                   <div class="feature__images w-img mb-40">
-                     <img src="assets/img/feature/fet-01.jpg" alt="">
+                     <img src="{% static 'webapp/assets/img/feature/fet-01.jpg' %}" alt="">
                      <div class="vide-button">
                         <a href="https://www.youtube.com/watch?v=o4GuSJYSzrY" class="popup-video"><i class="fa-solid fa-play"></i></a>
                      </div>
@@ -663,7 +665,7 @@
                         <div class="testimonial__item swiper-slide">
                            <p class="review__text">“ A user review is a review conducted by any person who has access to the internet and publishes their ux to a review site or social media platform ”</p>
                            <div class="review__info mt-30">
-                              <a href="#"><img src="assets/img/author/client-1.jpg" alt=""></a>
+                              <a href="#"><img src="{% static 'webapp/assets/img/author/client-1.jpg' %}" alt=""></a>
                               <div class="client__content">
                                  <h5 class="client__name"><a href="#">Alonso Dowson</a></h5>
                                  <div class="client__designation"><p>Head Of Idea , <a href="#">Alonso Co.</a></p></div>
@@ -676,7 +678,7 @@
                               internet and publishes their ux to a
                               review site or social media platform ”</p>
                            <div class="review__info mt-30">
-                              <a href="#"><img src="assets/img/author/client-2.jpg" alt=""></a>
+                              <a href="#"><img src="{% static 'webapp/assets/img/author/client-2.jpg' %}" alt=""></a>
                               <div class="client__content">
                                  <h5 class="client__name"><a href="#">Rosalina William</a></h5>
                                  <div class="client__designation"><p>CEO , <a href="#">Rosa Corporation</a></p></div>
@@ -689,7 +691,7 @@
                               seen this year. Amazing design, easy to
                               customize a ”</p>
                            <div class="review__info mt-30">
-                              <a href="#"><img src="assets/img/author/client-3.jpg" alt=""></a>
+                              <a href="#"><img src="{% static 'webapp/assets/img/author/client-3.jpg' %}" alt=""></a>
                               <div class="client__content">
                                  <h5 class="client__name"><a href="#">Iqbal Hossain</a></h5>
                                  <div class="client__designation"><p>Founder , <a href="#">Gazi Company</a></p></div>
@@ -702,7 +704,7 @@
                               account on its cloud platform. Think Dikons is the best theme I ever
                               seen this year. ”</p>
                            <div class="review__info mt-30">
-                              <a href="#"><img src="assets/img/author/client-4.jpg" alt=""></a>
+                              <a href="#"><img src="{% static 'webapp/assets/img/author/client-4.jpg' %}" alt=""></a>
                               <div class="client__content">
                                  <h5 class="client__name"><a href="#">Josep D. William</a></h5>
                                  <div class="client__designation"><p>Head Of Idea , <a href="#">William Co.</a></p></div>
@@ -723,7 +725,7 @@
             <div class="team__wrapper swiper-wrapper">
                <div class="team__item swiper-slide">
                   <div class="team__image w-img">
-                     <a href="team.details.html"><img src="assets/img/team/team-5.jpg" alt=""></a>
+                     <a href="team.details.html"><img src="{% static 'webapp/assets/img/team/team-5.jpg' %}" alt=""></a>
                      <div class="team__content">
                         <span>Head Of Idea</span>
                         <h5><a href="team-details.html">Alonso D. Dowson</a></h5>
@@ -738,7 +740,7 @@
                </div>
                <div class="team__item swiper-slide">
                   <div class="team__image w-img">
-                     <a href="team.details.html"><img src="assets/img/team/team-4.jpg" alt=""></a>
+                     <a href="team.details.html"><img src="{% static 'webapp/assets/img/team/team-4.jpg' %}" alt=""></a>
                      <div class="team__content">
                         <span>Ceo Of Cmt</span>
                         <h5><a href="team-details.html">Angliya Willam</a></h5>
@@ -753,7 +755,7 @@
                </div>
                <div class="team__item swiper-slide">
                   <div class="team__image w-img">
-                     <a href="team.details.html"><img src="assets/img/team/team-2.jpg" alt=""></a>
+                     <a href="team.details.html"><img src="{% static 'webapp/assets/img/team/team-2.jpg' %}" alt=""></a>
                      <div class="team__content">
                         <span>Head Of Instractor</span>
                         <h5><a href="team-details.html">Josep D. Maxson</a></h5>
@@ -768,7 +770,7 @@
                </div>
                <div class="team__item swiper-slide">
                   <div class="team__image w-img">
-                     <a href="team.details.html"><img src="assets/img/team/team-3.jpg" alt=""></a>
+                     <a href="team.details.html"><img src="{% static 'webapp/assets/img/team/team-3.jpg' %}" alt=""></a>
                      <div class="team__content">
                         <span>Head Of Art</span>
                         <h5><a href="team-details.html">Iqbal Hossain</a></h5>
@@ -783,7 +785,7 @@
                </div>
                <div class="team__item swiper-slide">
                   <div class="team__image w-img">
-                     <a href="team.details.html"><img src="assets/img/team/team-1.jpg" alt=""></a>
+                     <a href="team.details.html"><img src="{% static 'webapp/assets/img/team/team-1.jpg' %}" alt=""></a>
                      <div class="team__content">
                         <span>Head Of Art</span>
                         <h5><a href="team-details.html">Sanji Maxspn</a></h5>
@@ -798,7 +800,7 @@
                </div>
                <div class="team__item swiper-slide">
                   <div class="team__image w-img">
-                     <a href="team.details.html"><img src="assets/img/team/team-6.jpg" alt=""></a>
+                     <a href="team.details.html"><img src="{% static 'webapp/assets/img/team/team-6.jpg' %}" alt=""></a>
                      <div class="team__content">
                         <span>Head Of Creative</span>
                         <h5><a href="team-details.html">Andrew Woon</a></h5>
@@ -825,12 +827,12 @@
                      <div class="row">
                         <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
                            <div class="image-1 w-img">
-                              <img src="assets/img/process/process-1.jpg" alt="">
+                              <img src="{%  static 'webapp/assets/img/process/process-1.jpg' %}" alt="">
                            </div>
                         </div>
                         <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
                            <div class="image-2 w-img">
-                              <img src="assets/img/process/process-2.jpg" alt="">
+                              <img src="{%  static 'webapp/assets/img/process/process-2.jpg' %}" alt="">
                            </div>
                         </div>
                      </div>
@@ -848,7 +850,7 @@
                         <div class="process__list-item mb-30">
                            <div class="process__list-info">
                               <div class="process__list-icon">
-                                 <img src="assets/img/icon/picon-1.png" alt="">
+                                 <img src="{% static 'webapp/assets/img/icon/picon-1.png' %}" alt="">
                               </div>
                               <div class="process__list-content">
                                  <span>Process 01</span>
@@ -862,7 +864,7 @@
                         <div class="process__list-item mb-30">
                            <div class="process__list-info">
                               <div class="process__list-icon">
-                                 <img src="assets/img/icon/picon-2.png" alt="">
+                                 <img src="{% static 'webapp/assets/img/icon/picon-2.png' %}" alt="">
                               </div>
                               <div class="process__list-content">
                                  <span>Process 02</span>
@@ -876,7 +878,7 @@
                         <div class="process__list-item mb-30">
                            <div class="process__list-info">
                               <div class="process__list-icon">
-                                 <img src="assets/img/icon/picon-3.png" alt="">
+                                 <img src="{% static 'webapp/assets/img/icon/picon-3.png' %}" alt="">
                               </div>
                               <div class="process__list-content">
                                  <span>Process 03</span>
@@ -1008,7 +1010,7 @@
                   <div class="col-xl-2 col-lg-2 col-md-3 col-sm-4">
                      <div class="footer__widget mb-40">
                         <div class="footer__logo">
-                           <a href="index.html"><img src="assets/img/logo/footer-logo.png" alt=""></a>
+                           <a href="index.html"><img src="{% static 'webapp/assets/img/logo/footer-logo.png' %}" alt=""></a>
                         </div>
                      </div>
                   </div>
@@ -1108,31 +1110,31 @@
                </div>
             </div>
             <div class="footer__shape-1">
-               <img src="assets/img/footer/footer-shape-1.png" alt="">
+               <img src="{%  static 'webapp/assets/img/footer/footer-shape-1.png' %}" alt="">
             </div>
             <div class="footer__shape-2">
-               <img src="assets/img/footer/footer-shape-2.png" alt="">
+               <img src="{%  static 'webapp/assets/img/footer/footer-shape-2.png' %}" alt="">
             </div>
          </div>
       </footer>
       <!-- footer end -->
 
       <!-- JS here -->
-      <script src="assets/js/vendor/jquery.js"></script>
-      <script src="assets/js/vendor/waypoints.js"></script>
-      <script src="assets/js/bootstrap-bundle.js"></script>
-      <script src="assets/js/meanmenu.js"></script>
-      <script src="assets/js/swiper-bundle.js"></script>
-      <script src="assets/js/owl-carousel.js"></script>
-      <script src="assets/js/magnific-popup.js"></script>
-      <script src="assets/js/parallax.js"></script>
-      <script src="assets/js/backtotop.js"></script>
-      <script src="assets/js/nice-select.js"></script>
-      <script src="assets/js/counterup.js"></script>
-      <script src="assets/js/wow.js"></script>
-      <script src="assets/js/isotope-pkgd.js"></script>
-      <script src="assets/js/imagesloaded-pkgd.js"></script>
-      <script src="assets/js/ajax-form.js"></script>
-      <script src="assets/js/main.js"></script>
+      <script src="{% static 'webapp/assets/js/vendor/jquery.js' %}"></script>
+      <script src="{% static 'webapp/assets/js/vendor/waypoints.js' %}"></script>
+      <script src="{% static 'webapp/assets/js/bootstrap-bundle.js' %}"></script>
+      <script src="{% static 'webapp/assets/js/meanmenu.js' %}"></script>
+      <script src="{% static 'webapp/assets/js/swiper-bundle.js' %}"></script>
+      <script src="{% static 'webapp/assets/js/owl-carousel.js' %}"></script>
+      <script src="{% static 'webapp/assets/js/magnific-popup.js' %}"></script>
+      <script src="{% static 'webapp/assets/js/parallax.js' %}"></script>
+      <script src="{% static 'webapp/assets/js/backtotop.js' %}"></script>
+      <script src="{% static 'webapp/assets/js/nice-select.js' %}"></script>
+      <script src="{% static 'webapp/assets/js/counterup.js' %}"></script>
+      <script src="{% static 'webapp/assets/js/wow.js' %}"></script>
+      <script src="{% static 'webapp/assets/js/isotope-pkgd.js' %}"></script>
+      <script src="{% static 'webapp/assets/js/imagesloaded-pkgd.js' %}"></script>
+      <script src="{% static 'webapp/assets/js/ajax-form.js' %}"></script>
+      <script src="{% static 'webapp/assets/js/main.js' %}"></script>
    </body>
 </html>
