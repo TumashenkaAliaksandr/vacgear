@@ -74,7 +74,7 @@
                                        </ul>
                                     </li>
                                     <li {% if request.resolver_match.url_name == 'about' %}class="active"{% endif %}><a href="{%  url 'webapp:about' %}">About Us</a></li>
-                                    <li><a href="contact.html">Contact</a></li>
+                                    <li {% if request.resolver_match.url_name == 'contact' %}class="active"{% endif %}><a href="{% url 'webapp:contact' %}">Contact</a></li>
                                  </ul>
                               </nav>
                            </div>
