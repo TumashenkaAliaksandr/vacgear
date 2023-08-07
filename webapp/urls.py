@@ -9,9 +9,9 @@ app_name = 'webapp'
 
 urlpatterns = [
     path('', index, name='home'),
+    path('journal/', journal, name='journal'),
     path('about/', about, name='about'),
     path('contact/', contact, name='contact'),
-    path('journal/', journal, name='journal'),
 ]
 
 if settings.DEBUG:

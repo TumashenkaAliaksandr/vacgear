@@ -65,10 +65,10 @@
                            <div class="main-menu">
                               <nav id="mobile-menu">
                                  <ul>
-                                    <li {% if request.resolver_match.url_name == 'home' %}class="active"{% endif %}><a href="{% url 'webapp:home' %}" class="nav-link">Home</a></li>
-                                    <li {% if request.resolver_match.url_name == 'journal' %}class="active"{% endif %}><a href="{% url 'webapp:journal' %} " class="nav-link">Knowledge</a></li>
-                                    <li {% if request.resolver_match.url_name == 'about' %}class="active"{% endif %}><a href="{%  url 'webapp:about' %}" class="nav-link">About Us</a></li>
-                                    <li {% if request.resolver_match.url_name == 'contact' %}class="active"{% endif %}><a href="{% url 'webapp:contact' %}" class="nav-link">Contact</a></li>
+                                    <li {% if request.resolver_match.url_name == 'home' %}class="active"{% endif %}><a href="{% url 'webapp:home' %}" class="main-menu">Home</a></li>
+                                    <li {% if request.resolver_match.url_name == 'journal' %}class="active"{% endif %}><a href="{% url 'webapp:journal' %} " class="main-menu">Journal</a></li>
+                                    <li {% if request.resolver_match.url_name == 'about' %}class="active"{% endif %}><a href="{%  url 'webapp:about' %}" class="main-menu">About Us</a></li>
+                                    <li {% if request.resolver_match.url_name == 'contact' %}class="active"{% endif %}><a href="{% url 'webapp:contact' %}" class="main-menu">Contact</a></li>
                                  </ul>
                               </nav>
                            </div>
