@@ -66,25 +66,14 @@
                            <div class="main-menu">
                               <nav id="mobile-menu">
                                  <ul>
-                                    <li class="has-dropdown"><a href="index.html">Home</a>
-                                       <ul class="sub-menu">
-                                          <li><a href="index.html">Home One</a></li>
-                                          <li><a href="index-2.html">Home Two</a></li>
-                                          <li><a href="index-3.html">Home Three</a></li>
-                                       </ul>
-                                    </li>
+                                    <li {% if request.resolver_match.url_name == 'home' %}class="active"{% endif %}><a href="{% url 'webapp:home' %}">Home</a></li>
                                     <li class="has-dropdown"><a href="services.html">Services</a>
                                        <ul class="sub-menu">
-                                          <li><a href="services.html">Services</a></li>
+                                          <li><a href="services.html">Knowledge</a></li>
                                           <li><a href="services-details.html">Services Details</a></li>
                                        </ul>
                                     </li>
-                                    <li class="has-dropdown"><a href="{%  url 'webapp:about' %}">About Us</a></li>
-                                    <li class="has-dropdown"><a href="blog.html">News</a>
-                                       <ul class="sub-menu">
-                                          <li><a href="blog.html">News</a></li>
-                                          <li><a href="blog-details.html">News Details</a></li>
-                                       </ul></li>
+                                    <li {% if request.resolver_match.url_name == 'about' %}class="active"{% endif %}><a href="{%  url 'webapp:about' %}">About Us</a></li>
                                     <li><a href="contact.html">Contact</a></li>
                                  </ul>
                               </nav>
