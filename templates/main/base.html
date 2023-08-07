@@ -25,141 +25,6 @@
       {% include 'main/menu.html' %}
 
 
-      <!-- slider-area-start  -->
-      <section class="slider-area fix">
-         <div class="swiper main-slider swiper-container swiper-container-fade">
-            <div class="swiper-wrapper p-relative">
-               <div class="item-slider sliderm-height p-relative swiper-slide">
-                  <div class="slide-bg" data-background="{% static 'webapp/assets/img/slider/fes_men3.jpg' %}"></div>
-                  <div class="container">
-                     <div class="row ">
-                        <div class="col-lg-12">
-                           <div class="slider-contant mt-25">
-                               <span data-animation="fadeInUp" data-delay=".3s">Industrial</span>
-                               <h2 class="slider-title" data-animation="fadeInUp" data-delay=".6s">Metal Works</h2>
-                               <div class="slider-button" data-animation="fadeInUp" data-delay=".9s">
-                                   <a href="services.html" class="tp-btn mr-30">Our Services <i class="fal fa-angle-right"></i></a>
-                                   <a href="about.html" class="tp-btn-2">Learn More</a>
-                               </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <div class="item-slider sliderm-height p-relative swiper-slide">
-                 <div class="slide-bg" data-background="{% static 'webapp/assets/img/slider/fes_men2.jpg' %}"></div>
-                 <div class="container">
-                    <div class="row ">
-                       <div class="col-lg-12">
-                          <div class="slider-contant mt-25">
-                              <span  class="slider-button" data-animation="fadeInUp" data-delay=".3s">Construction</span>
-                              <h2  class="slider-title" data-animation="fadeInUp" data-delay=".6s">Oil Works</h2>
-                              <div class="slider-button" data-animation="fadeInUp" data-delay=".9s">
-                                 <a href="services.html" class="tp-btn mr-30">Our Services <i class="fal fa-angle-right"></i></a>
-                                 <a href="about.html" class="tp-btn-2">Learn More</a>
-                              </div>
-                          </div>
-                       </div>
-                    </div>
-                 </div>
-               </div>
-               <div class="item-slider sliderm-height p-relative swiper-slide">
-                 <div class="slide-bg" data-background="{% static 'webapp/assets/img/slider/fes_men.jpg' %}"></div>
-                 <div class="container">
-                    <div class="row ">
-                       <div class="col-lg-12">
-                          <div class="slider-contant mt-25">
-                              <span data-animation="fadeInUp" data-delay=".2s">Architecture</span>
-                              <h2 class="slider-title" data-animation="fadeInUp" data-delay=".6s">Interior Works</h2>
-                              <div class="slider-button" data-animation="fadeInUp" data-delay=".10s">
-                                 <a href="services.html" class="tp-btn mr-30">Our Services <i class="fal fa-angle-right"></i></a>
-                                 <a href="about.html" class="tp-btn-2">Learn More</a>
-                              </div>
-                          </div>
-                       </div>
-                    </div>
-                 </div>
-               </div>
-               <div class="item-slider sliderm-height p-relative swiper-slide">
-               <div class="slide-bg" data-background="{% static 'webapp/assets/img/slider/fes_bag.jpg' %}"></div>
-               <div class="container">
-                  <div class="row ">
-                     <div class="col-lg-12">
-                        <div class="slider-contant mt-25">
-                            <span  class="slider-button" data-animation="fadeInUp" data-delay=".3s">Construction</span>
-                            <h2  class="slider-title" data-animation="fadeInUp" data-delay=".6s">Cotton Works</h2>
-                            <div class="slider-button" data-animation="fadeInUp" data-delay=".9s">
-                               <a href="services.html" class="tp-btn mr-30">Our Services <i class="fal fa-angle-right"></i></a>
-                               <a href="about.html" class="tp-btn-2">Learn More</a>
-                            </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               </div>
-            </div>
-            <!-- If we need navigation buttons -->
-            <div class="swiper-button-prev ms-button"><i class="far fa-long-arrow-left"></i></div>
-            <div class="swiper-button-next ms-button"><i class="far fa-long-arrow-right"></i></div>
-         </div>
-      </section>
-      <!-- slider-area-end -->
-
-      <!-- Swiper Dot start -->
-      <section class="main-slider-dot">
-         <div class="container">
-            <div class="swiper main-slider-nav">
-               <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                     <div class="sm-button">
-                        <div class="sm-services__icon">
-                           <i class="flaticon-industrial-robot"></i>
-                        </div>
-                        <div class="sm-services__text">
-                           <span>Service 01</span>
-                           <h4>Industrial Business</h4>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="swiper-slide">
-                     <div class="sm-button">
-                        <div class="sm-services__icon">
-                           <i class="flaticon-industrial"></i>
-                        </div>
-                        <div class="sm-services__text">
-                              <span>Service 02</span>
-                           <h4>Manufacture Factory</h4>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="swiper-slide">
-                     <div class="sm-button">
-                        <div class="sm-services__icon">
-                           <i class="flaticon-manufacturing"></i>
-                        </div>
-                        <div class="sm-services__text">
-                              <span>Service 03</span>
-                           <h4>Scientific Laboratories</h4>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="swiper-slide">
-                     <div class="sm-button">
-                        <div class="sm-services__icon">
-                           <i class="flaticon-helmet"></i>
-                        </div>
-                        <div class="sm-services__text">
-                              <span>Service 04</span>
-                           <h4>Financial Corporates</h4>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </section>
-      <!-- Swiper Dot end -->
-
       {% block content %}{% endblock %}
 
       <!-- footer start -->
@@ -170,7 +35,7 @@
                   <div class="col-xl-2 col-lg-2 col-md-3 col-sm-4">
                      <div class="footer__widget mb-40">
                         <div class="footer__logo">
-                           <a href="index.html"><img src="{% static 'webapp/assets/img/logo/footer-logo.png' %}" alt=""></a>
+                           <a href="{% url 'webapp:home' %}"><img src="{% static 'webapp/assets/img/logo/footer-logo.png' %}" alt=""></a>
                         </div>
                      </div>
                   </div>
@@ -252,22 +117,22 @@
                      </div>
                   </div>
                </div>
-               <div class="footer__copyright white-bg mt-60">
-                  <div class="row">
-                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
-                        <div class="footer__copyright-text">
-                           <p>Copyright & Design By <a href="#">@ThemePure</a> - 2022</p>
+                <div class="footer__copyright white-bg mt-60">
+                    <div class="row">
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
+                            <div class="footer__copyright-text">
+                                <p>Copyright & Design By <a href="#">https://t.me/ultravioletpartyeyes</a></p>
+                            </div>
                         </div>
-                     </div>
-                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
-                        <div class="footer__copyright-links text-sm-end">
-                           <a href="faq.html">Faq</a>
-                           <a href="contact.html">Careers </a>
-                           <a href="contact.html">Refund Policy</a>
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
+                            <div class="footer__copyright-links text-sm-end">
+                                <a href="faq.html">Faq</a>
+                                <a href="contact.html">Careers </a>
+                                <a href="contact.html">Refund Policy</a>
+                            </div>
                         </div>
-                     </div>
-                  </div>
-               </div>
+                    </div>
+                </div>
             </div>
             <div class="footer__shape-1">
                <img src="{%  static 'webapp/assets/img/footer/footer-shape-1.png' %}" alt="">
