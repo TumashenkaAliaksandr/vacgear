@@ -67,12 +67,7 @@
                               <nav id="mobile-menu">
                                  <ul>
                                     <li {% if request.resolver_match.url_name == 'home' %}class="active"{% endif %}><a href="{% url 'webapp:home' %}">Home</a></li>
-                                    <li class="has-dropdown"><a href="services.html">Services</a>
-                                       <ul class="sub-menu">
-                                          <li><a href="services.html">Knowledge</a></li>
-                                          <li><a href="services-details.html">Services Details</a></li>
-                                       </ul>
-                                    </li>
+                                    <li {% if request.resolver_match.url_name == 'knowledge' %}class="active"{% endif %}><a href="{% url 'webapp:knowledge' %}">Knowledge</a></li>
                                     <li {% if request.resolver_match.url_name == 'about' %}class="active"{% endif %}><a href="{%  url 'webapp:about' %}">About Us</a></li>
                                     <li {% if request.resolver_match.url_name == 'contact' %}class="active"{% endif %}><a href="{% url 'webapp:contact' %}">Contact</a></li>
                                  </ul>
