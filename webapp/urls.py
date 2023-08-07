@@ -11,7 +11,7 @@ urlpatterns = [
     path('', index, name='home'),
     path('about/', about, name='about'),
     path('contact/', contact, name='contact'),
-    path('knowledge/', knowledge, name='knowledge'),
+    path('journal/', journal, name='journal'),
 ]
 
 if settings.DEBUG:

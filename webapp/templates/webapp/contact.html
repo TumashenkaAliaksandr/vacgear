@@ -1,28 +1,95 @@
-{% extends 'main/base.html' %}
+{% extends 'main/base_to_all.html' %}
 {% load static %}
 
 
 {% block content %}
 
       <!-- slider-area-start  -->
-      <section class="page__title-area page__title-height page__title-overlay d-flex align-items-center" data-background="assets/img/bg/page-bg.jpg">
+      <section class="page__title-area page__title-height page__title-overlay d-flex align-items-center" data-background="{% static 'webapp/assets/img/bg/businessman-screen-vacgear.jpg' %}">
          <div class="container">
             <div class="row">
                <div class="col-xxl-12">
                   <div class="page__title-wrapper mt-100">
                      <div class="breadcrumb-menu">
                         <ul>
-                            <li><a href="index.html">Home</a></li>
+                            <li><a href="{% url 'webapp:home' %}">Home</a></li>
                             <li><span>Contact</span></li>
                         </ul>
                     </div>
-                     <h3 class="page__title mt-20">What we do</h3>
+                     <h3 class="page__title mt-20">Get In Touch</h3>
                   </div>
                </div>
             </div>
          </div>
       </section>
       <!-- slider-area-end -->
+
+      <!-- contact__area start -->
+      <section class="contact__area pt-120 pb-80" data-background="{% static 'webapp/assets/img/bg/contact-bg.png' %}">
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-3 col-md-6">
+                  <div class="contact__item text-center mb-30">
+                     <div class="contact__icon mb-35">
+                        <i class="fal fa-envelope-open-text"></i>
+                     </div>
+                     <h5 class="contact__title mb-25">Email Address</h5>
+                     <div class="contact__text">
+                        <p><a href="mailto:info@webmail.com">info@webmail.com</a></p>
+                        <p><a href="mailto:jobs@websitehints.com">jobs@websitehints.com</a></p>
+                     </div>
+                     <div class="contact__button mt-30">
+                        <a href="mailto:jobs@websitehints.com" class="tp-btn-white">Email Us <i class="fa-light fa-arrow-right-long"></i></a>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-3 col-md-6">
+                  <div class="contact__item text-center mb-30">
+                     <div class="contact__icon mb-35">
+                        <i class="fa-light fa-phone"></i>
+                     </div>
+                     <h5 class="contact__title mb-25">Phone Number</h5>
+                     <div class="contact__text">
+                        <p><a href="tel:+78923656825">789. 236. 568. 25</a></p>
+                        <p><a href="tel:+7892516563">789 (125) 165 63</a></p>
+                     </div>
+                     <div class="contact__button mt-30">
+                        <a href="tel:+7892516563" class="tp-btn-white">Call Us <i class="fa-light fa-arrow-right-long"></i></a>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-3 col-md-6">
+                  <div class="contact__item text-center mb-30">
+                     <div class="contact__icon mb-35">
+                        <i class="fa-light fa-map-location-dot"></i>
+                     </div>
+                     <h5 class="contact__title mb-25">Office Address</h5>
+                     <div class="contact__text">
+                        <p><a href="https://goo.gl/maps/ZW5MZEgAG4zRJc6B7" target="blank">15 E Joseph St, Moonachie, <br> NJ 07074, USA</a></p>
+                     </div>
+                     <div class="contact__button mt-30">
+                        <a href="https://goo.gl/maps/ZW5MZEgAG4zRJc6B7" target="blank" class="tp-btn-white">Direction <i class="fa-light fa-arrow-right-long"></i></a>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-3 col-md-6">
+                  <div class="contact__item text-center mb-30">
+                     <div class="contact__icon mb-35">
+                        <i class="fa-light fa-bullseye-arrow"></i>
+                     </div>
+                     <h5 class="contact__title mb-25">Social Connect</h5>
+                     <div class="contact__social mt-30">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-behance"></i></a>
+                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- contact__area end -->
 
       <!-- contact__area-2 start -->
       <section class="contact__area-2">

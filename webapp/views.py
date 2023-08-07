@@ -4,8 +4,8 @@ from django.shortcuts import render
 def index(request):
     return render(request, 'webapp/index.html')
 
-def knowledge(request):
-    return render(request, 'webapp/knowledge.html')
+def journal(request):
+    return render(request, 'webapp/journal.html')
 
 def about(request):
     return render(request, 'webapp/about.html')
